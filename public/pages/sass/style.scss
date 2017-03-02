@@ -1,0 +1,246 @@
+/****************************************************************************
+VARIABLE
+****************************************************************************/
+//fontsize
+$SIZE_LARGER : 30px;
+$SIZE_LARGE : 25px;
+$SIZE_MEDIUM  : 20px;
+$SIZE_SMALL : 15px;
+$SIZE_SMALLER : 10px;
+
+//color
+$lIGHT_GREEN : #83c9aa;
+$DARK_GREY : #a59f9f;
+
+/****************************************************************************
+GENERAL
+****************************************************************************/
+//font
+@font-face {
+	font-family: "expressway";
+	src: url("../fonts/expressway/expressway rg.ttf") format("trueType");
+}
+
+//general
+body
+{
+	font-family: "expressway";
+	margin: 0px;
+	background-color: #e0dada;
+}
+
+#page-content
+{
+	display: none;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+//band
+.band-box
+{
+	min-height: 600px;
+}
+
+.full-band-right
+{
+	position: absolute;
+	height: 350px;
+	width: 110vw;
+	transform: translate(-50px, -100px) rotate(3deg);
+	z-index:0;
+}
+
+.full-band-left
+{
+	position: absolute;
+	height: 350px;
+	width: 110vw;
+	transform: translate(-50px, -100px) rotate(-3deg);
+	z-index:0;
+}
+
+//parallax
+.parallax
+{
+	/* Full height */
+	height: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/****************************************************************************
+COLOR
+****************************************************************************/
+//backgroundparallax
+.BG-light-green
+{
+	background-color: $lIGHT_GREEN;
+}
+
+.BG-dark-grey
+{
+	background-color: $DARK_GREY;
+}
+
+//font color
+
+/****************************************************************************
+SIDEMENU.PHP
+****************************************************************************/
+#sidemenu
+{
+	position: fixed;
+	left: -305px;
+	z-index: 1;
+}
+
+.tab
+{
+	transition-duration: 0.5s;
+	margin-bottom: 5px;
+	width: 300px;
+	background-color: #6f6d6d;
+	height: 40px;
+	text-align: center;
+}
+
+.menu-icon
+{
+	float: right;
+}
+
+.menu-link
+{
+	display: flex;
+	float: right;
+	list-style: none;
+	color: white;
+	margin-top: 10;
+	margin-right: 5px;
+	text-decoration: none;
+}
+
+.label-link
+{
+	margin-right: 15px;
+}
+
+
+/****************************************************************************
+HOME.PHP
+****************************************************************************/
+//doors
+#door-frame
+{
+	display: flex;
+	height: 100%;
+}
+
+#door1
+{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 100vh solid;
+	border-left-width: 100vw;
+	border-bottom: none;
+	border-right: none;
+	border-color: #6f6d6d transparent;
+}
+
+.door1-open
+{
+	transition-duration: 1.5s;
+	transform : translate(0px, -1000px);
+}
+
+.door2-open
+{
+	transition-duration: 1.5s;
+	transform : translate(-2000px, 0px);
+}
+
+#door2
+{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 100vh solid;
+	border-left-width: 100vw;
+	border-bottom: none;
+	border-right: none;
+	border-color: transparent $DARK_GREY;
+}
+
+#door-box
+{
+	margin:auto;
+	margin-bottom: 50vh;
+}
+
+.title-box
+{
+	position: relative;
+	text-align: center;
+}
+
+#enter-box
+{
+	position: relative;
+	text-align: center;
+	font-size: $SIZE_MEDIUM;
+	width: 100px;
+	padding: 10px;
+	background-color: #257a2b;
+	margin: auto;
+}
+
+#enter-box:hover
+{
+	cursor: pointer;
+	background-color: #2d9034;
+}
+
+//background
+.BG-home
+{
+	background-image: url('../img/background/home.jpg');
+}
+
+
+.BG-formation
+{
+	background-image: url('../img/background/formation.jpg');
+}
+
+.BG-exppro
+{
+	background-image: url('../img/background/exppro.jpg');
+}
+
+.BG-project
+{
+	background-image: url('../img/background/project.png');
+}
+
+//content
+.centered-box
+{
+	margin: auto;
+	margin-top: 30px;
+}
+
+.text-box
+{
+	text-align: center;
+	margin-top: 250px;
+}
+

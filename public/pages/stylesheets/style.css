@@ -1,0 +1,220 @@
+/****************************************************************************
+VARIABLE
+****************************************************************************/
+/****************************************************************************
+GENERAL
+****************************************************************************/
+@font-face {
+  font-family: "expressway";
+  src: url("../fonts/expressway/expressway rg.ttf") format("trueType");
+}
+/* line 25, ../sass/style.scss */
+body {
+  font-family: "expressway";
+  margin: 0px;
+  background-color: #e0dada;
+}
+
+/* line 32, ../sass/style.scss */
+#page-content {
+  display: none;
+}
+
+/* line 37, ../sass/style.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 43, ../sass/style.scss */
+.band-box {
+  min-height: 600px;
+}
+
+/* line 48, ../sass/style.scss */
+.full-band-right {
+  position: absolute;
+  height: 350px;
+  width: 110vw;
+  transform: translate(-50px, -100px) rotate(3deg);
+  z-index: 0;
+}
+
+/* line 57, ../sass/style.scss */
+.full-band-left {
+  position: absolute;
+  height: 350px;
+  width: 110vw;
+  transform: translate(-50px, -100px) rotate(-3deg);
+  z-index: 0;
+}
+
+/* line 67, ../sass/style.scss */
+.parallax {
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/****************************************************************************
+COLOR
+****************************************************************************/
+/* line 83, ../sass/style.scss */
+.BG-light-green {
+  background-color: #83c9aa;
+}
+
+/* line 88, ../sass/style.scss */
+.BG-dark-grey {
+  background-color: #a59f9f;
+}
+
+/****************************************************************************
+SIDEMENU.PHP
+****************************************************************************/
+/* line 98, ../sass/style.scss */
+#sidemenu {
+  position: fixed;
+  left: -305px;
+  z-index: 1;
+}
+
+/* line 105, ../sass/style.scss */
+.tab {
+  transition-duration: 0.5s;
+  margin-bottom: 5px;
+  width: 300px;
+  background-color: #6f6d6d;
+  height: 40px;
+  text-align: center;
+}
+
+/* line 115, ../sass/style.scss */
+.menu-icon {
+  float: right;
+}
+
+/* line 120, ../sass/style.scss */
+.menu-link {
+  display: flex;
+  float: right;
+  list-style: none;
+  color: white;
+  margin-top: 10;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+/* line 131, ../sass/style.scss */
+.label-link {
+  margin-right: 15px;
+}
+
+/****************************************************************************
+HOME.PHP
+****************************************************************************/
+/* line 141, ../sass/style.scss */
+#door-frame {
+  display: flex;
+  height: 100%;
+}
+
+/* line 147, ../sass/style.scss */
+#door1 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 100vh solid;
+  border-left-width: 100vw;
+  border-bottom: none;
+  border-right: none;
+  border-color: #6f6d6d transparent;
+}
+
+/* line 159, ../sass/style.scss */
+.door1-open {
+  transition-duration: 1.5s;
+  transform: translate(0px, -1000px);
+}
+
+/* line 165, ../sass/style.scss */
+.door2-open {
+  transition-duration: 1.5s;
+  transform: translate(-2000px, 0px);
+}
+
+/* line 171, ../sass/style.scss */
+#door2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 100vh solid;
+  border-left-width: 100vw;
+  border-bottom: none;
+  border-right: none;
+  border-color: transparent #a59f9f;
+}
+
+/* line 183, ../sass/style.scss */
+#door-box {
+  margin: auto;
+  margin-bottom: 50vh;
+}
+
+/* line 189, ../sass/style.scss */
+.title-box {
+  position: relative;
+  text-align: center;
+}
+
+/* line 195, ../sass/style.scss */
+#enter-box {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 100px;
+  padding: 10px;
+  background-color: #257a2b;
+  margin: auto;
+}
+
+/* line 206, ../sass/style.scss */
+#enter-box:hover {
+  cursor: pointer;
+  background-color: #2d9034;
+}
+
+/* line 213, ../sass/style.scss */
+.BG-home {
+  background-image: url("../img/background/home.jpg");
+}
+
+/* line 219, ../sass/style.scss */
+.BG-formation {
+  background-image: url("../img/background/formation.jpg");
+}
+
+/* line 224, ../sass/style.scss */
+.BG-exppro {
+  background-image: url("../img/background/exppro.jpg");
+}
+
+/* line 229, ../sass/style.scss */
+.BG-project {
+  background-image: url("../img/background/project.png");
+}
+
+/* line 235, ../sass/style.scss */
+.centered-box {
+  margin: auto;
+  margin-top: 30px;
+}
+
+/* line 241, ../sass/style.scss */
+.text-box {
+  text-align: center;
+  margin-top: 250px;
+}
