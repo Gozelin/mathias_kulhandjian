@@ -16,12 +16,20 @@ define("ENTER", "Entrez");
 define("TITLE_FORMATION", "Formations");
 define("TITLE_EXPPRO", "Expériences professionnelles");
 define("TITLE_PROJECT", "Projets futurs");
+define("KNOW_MORE", "en savoir plus");
 
 /****************************************************************************************************
 SIDEMENU.PHP
 ****************************************************************************************************/
+define("HOME", "Accueil");
 define("FORMATION", "Formations");
 define("EXPPRO", "Expériences professionnelles");
 define("PROJECT", "Projets");
 
+
+/****************************************************************************************************
+FORMATION.PHP
+****************************************************************************************************/
+define("BTSSIO", "BTS SIO");
+define("STI2D", "STI 2D");
 ?>

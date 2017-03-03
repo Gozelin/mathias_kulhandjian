@@ -6,9 +6,10 @@ include_once("../src/language.php");
 
 <div id="sidemenu">
 	<ul>
-		<li class="tab" ><a href="" class="menu-link"><div class="label-link"><?php echo FORMATION ?></div><img class="menu-icon" src="img/icons/formation.svg" height="24" width="24"></a></li>
-		<li class="tab" ><a href="" class="menu-link"><div class="label-link"><?php echo EXPPRO ?></div><img class="menu-icon" src="img/icons/exppro.svg" height="24" width="24"></a></li>
-		<li class="tab" ><a href="" class="menu-link"><div class="label-link"><?php echo PROJECT ?></div><img class="menu-icon" src="img/icons/project.svg" height="24" width="24"></a></li>
+		<li class="tab" ><a href="home.php" class="menu-link"><div class="label-link"><?php echo HOME ?></div><img class="menu-icon" src="img/icons/formation.svg" height="24" width="24"></a></li>
+		<li class="tab" ><a href="formation.php" class="menu-link"><div class="label-link"><?php echo FORMATION ?></div><img class="menu-icon" src="img/icons/formation.svg" height="24" width="24"></a></li>
+		<li class="tab" ><a href="exppro.php" class="menu-link"><div class="label-link"><?php echo EXPPRO ?></div><img class="menu-icon" src="img/icons/exppro.svg" height="24" width="24"></a></li>
+		<li class="tab" ><a href="project.php" class="menu-link"><div class="label-link"><?php echo PROJECT ?></div><img class="menu-icon" src="img/icons/project.svg" height="24" width="24"></a></li>
 	</ul>
 </div>
 

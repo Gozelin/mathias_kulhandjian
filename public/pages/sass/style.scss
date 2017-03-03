@@ -10,7 +10,10 @@ $SIZE_SMALLER : 10px;
 
 //color
 $lIGHT_GREEN : #83c9aa;
-$DARK_GREY : #a59f9f;
+$LIGHT_GREY: #e0dada;
+$DARK_GREY : #cccaca;
+$DARKER_GREY : #6f6d6d;
+$CLASSIC-ORANGE : #ff975f;
 
 /****************************************************************************
 GENERAL
@@ -24,9 +27,10 @@ GENERAL
 //general
 body
 {
+	overflow-x: hidden;
 	font-family: "expressway";
 	margin: 0px;
-	background-color: #e0dada;
+	background-color: $LIGHT_GREY;
 }
 
 #page-content
@@ -37,6 +41,15 @@ body
 ul
 {
 	list-style-type: none;
+}
+
+a
+{
+	margin:auto;
+	float: right;
+	list-style: none;
+	color: white;
+	text-decoration: none;
 }
 
 //band
@@ -63,6 +76,15 @@ ul
 	z-index:0;
 }
 
+.separation-band
+{
+	position: absolute;
+	height: 230px;
+	width: 110vw;
+	margin-top: 25px;
+	z-index:1;
+}
+
 //parallax
 .parallax
 {
@@ -76,10 +98,29 @@ ul
 	background-size: cover;
 }
 
+//circle
+.circle-base {
+	border-radius: 50%;
+	behavior: url(PIE.htc);
+}
+
+//undisplayed
+.undisplayed
+{
+	display:none;
+}
+
+//margin-top
+.top-250
+{
+	margin-top: 250px;
+}
+
 /****************************************************************************
 COLOR
 ****************************************************************************/
-//backgroundparallax
+//background
+//plain
 .BG-light-green
 {
 	background-color: $lIGHT_GREEN;
@@ -90,7 +131,31 @@ COLOR
 	background-color: $DARK_GREY;
 }
 
+.BG-darker-grey
+{
+	background-color: $DARKER_GREY;
+}
+
+//transparent
+.BG-classic-orange-trans
+{
+	background: rgba(167, 163, 162, 0.7);
+}
+
 //font color
+
+/****************************************************************************
+FOOTER.PHP
+****************************************************************************/
+#footer-band
+{
+	position: absolute;
+	height: 80px;
+	width: 100vw;
+	// transform: translate(-50px, -100px);
+	z-index:0;
+}
+
 
 /****************************************************************************
 SIDEMENU.PHP
@@ -99,15 +164,16 @@ SIDEMENU.PHP
 {
 	position: fixed;
 	left: -305px;
-	z-index: 1;
+	z-index: 3;
 }
 
 .tab
 {
+	border: 1px solid white;
 	transition-duration: 0.5s;
 	margin-bottom: 5px;
 	width: 300px;
-	background-color: #6f6d6d;
+	background-color: $DARKER_GREY;
 	height: 40px;
 	text-align: center;
 }
@@ -120,12 +186,8 @@ SIDEMENU.PHP
 .menu-link
 {
 	display: flex;
-	float: right;
-	list-style: none;
-	color: white;
 	margin-top: 10;
 	margin-right: 5px;
-	text-decoration: none;
 }
 
 .label-link
@@ -140,7 +202,7 @@ HOME.PHP
 //doors
 #door-frame
 {
-	display: flex;
+	display: none;
 	height: 100%;
 }
 
@@ -234,13 +296,148 @@ HOME.PHP
 //content
 .centered-box
 {
+	height: 320px;
 	margin: auto;
 	margin-top: 30px;
 }
 
 .text-box
 {
-	text-align: center;
-	margin-top: 250px;
+	width: 70vw;
+	margin-left: 15vw;
+	word-wrap: break-word;
+	text-align: justify;
+	background: rgba(165,159,159, 0.5);
 }
 
+.link-button
+{
+	display: flex;
+	position: relative;
+	cursor: pointer;
+	font-size: $SIZE_MEDIUM;
+	width: 140px;
+	padding: 10px;
+	background: rgba(131,201,170, 0.3);
+	margin: auto;
+}
+
+.link-button:hover
+{
+	background: rgba(131,201,170, 1);
+}
+
+/****************************************************************************************************
+FORMATION.PHP
+****************************************************************************************************/
+
+//background
+.BG-SIO
+{
+	width:100%;
+	height:100%;
+	position: absolute;
+	background-image: url('../img/background/lycee.jpg');
+}
+
+.BG-STI
+{
+	width:100%;
+	height:100%;
+	position: absolute;
+	background-image: url('../img/background/lycee2.jpg');
+}
+
+.formation-box
+{
+	display: flex;
+	background-color: $DARK_GREY;
+	min-height: 900px;;
+}
+
+.formation-middle
+{
+	z-index: 1;
+	display: flex;
+	cursor: pointer;
+	margin: auto;
+	width: 260px;
+	height: 260px;
+	border: 3px solid $LIGHT_GREY;
+}
+
+.formation-middle-active
+{
+	color: white;
+	background-color: $CLASSIC-ORANGE;
+	border: 3px solid $LIGHT_GREY;
+}
+
+.formation-label
+{
+	cursor: pointer;
+	font-size: 40px;
+	margin: auto;
+}
+
+.formation-content
+{
+	position: absolute;
+	text-align: justify;
+	height: 100%;
+	width: 100%;
+}
+
+.top-box
+{
+	height: 50%;
+	width: 100%;
+	min-width: 1500px;
+}
+
+.bot-box
+{
+	height: 50%;
+	width: 100%;
+	min-width: 1500px;
+}
+
+.top-left
+{
+	padding: 15px;
+	width: 500px;
+	float: left;
+	margin: 40px 0px 0px 85px;
+	border: 1px solid $CLASSIC-ORANGE;
+	border-style: outset;
+}
+
+.top-right
+{
+	padding: 15px;
+	width: 500px;
+	float: right;
+	margin: 40px 85px 0px 0px;
+	border: 1px solid $CLASSIC-ORANGE;
+	border-style: outset;
+}
+
+.bot-left
+{
+	padding: 15px;
+	width: 500px;
+	float: left;
+	margin: 40px 0px 0px 85px;
+	border: 1px solid $CLASSIC-ORANGE;
+	border-style: outset;
+}
+
+.bot-right
+{
+	padding: 15px;
+	width: 500px;
+	float: right;
+	margin: 40px 85px 0px 0px;
+	border: 1px solid $CLASSIC-ORANGE;
+	border-style: outset;
+}
