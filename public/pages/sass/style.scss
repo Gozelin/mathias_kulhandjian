@@ -13,7 +13,7 @@ $lIGHT_GREEN : #83c9aa;
 $LIGHT_GREY: #e0dada;
 $DARK_GREY : #cccaca;
 $DARKER_GREY : #6f6d6d;
-$CLASSIC-ORANGE : #ff975f;
+$CLASSIC_ORANGE : #ff975f;
 
 /****************************************************************************
 GENERAL
@@ -27,7 +27,7 @@ GENERAL
 //general
 body
 {
-	overflow-x: hidden;
+	// overflow-x: hidden;
 	font-family: "expressway";
 	margin: 0px;
 	background-color: $LIGHT_GREY;
@@ -58,6 +58,14 @@ a
 	min-height: 600px;
 }
 
+.full-band
+{
+	position: absolute;
+	height: 260px;
+	width: 100%;
+	z-index:0;
+}
+
 .full-band-right
 {
 	position: absolute;
@@ -79,9 +87,8 @@ a
 .separation-band
 {
 	position: absolute;
-	height: 230px;
-	width: 110vw;
-	margin-top: 25px;
+	height: 176px;
+	width: 100%;
 	z-index:1;
 }
 
@@ -111,9 +118,15 @@ a
 }
 
 //margin-top
-.top-250
+.M-top-170
 {
-	margin-top: 250px;
+	margin-top: 170px;
+}
+
+//padding
+.P-top-30
+{
+	padding-top: 30px;
 }
 
 /****************************************************************************
@@ -142,6 +155,21 @@ COLOR
 	background: rgba(167, 163, 162, 0.7);
 }
 
+.BG-lighter-green-trans
+{
+	background: rgba(167, 210, 191, 0.7);
+}
+
+//border color
+.BC-classic-orange
+{
+	border: 1px solid $CLASSIC_ORANGE;
+}
+
+.BC-light-green
+{
+	border: 1px solid $lIGHT_GREEN;
+}
 //font color
 
 /****************************************************************************
@@ -151,7 +179,7 @@ FOOTER.PHP
 {
 	position: absolute;
 	height: 80px;
-	width: 100vw;
+	width: 100%;
 	// transform: translate(-50px, -100px);
 	z-index:0;
 }
@@ -336,7 +364,6 @@ FORMATION.PHP
 {
 	width:100%;
 	height:100%;
-	position: absolute;
 	background-image: url('../img/background/lycee.jpg');
 }
 
@@ -344,7 +371,6 @@ FORMATION.PHP
 {
 	width:100%;
 	height:100%;
-	position: absolute;
 	background-image: url('../img/background/lycee2.jpg');
 }
 
@@ -352,7 +378,8 @@ FORMATION.PHP
 {
 	display: flex;
 	background-color: $DARK_GREY;
-	min-height: 900px;;
+	min-height: 900px;
+	height: 100%
 }
 
 .formation-middle
@@ -361,15 +388,22 @@ FORMATION.PHP
 	display: flex;
 	cursor: pointer;
 	margin: auto;
-	width: 260px;
+	min-width: 260px;
 	height: 260px;
 	border: 3px solid $LIGHT_GREY;
 }
 
-.formation-middle-active
+.formation1-middle-active
 {
 	color: white;
-	background-color: $CLASSIC-ORANGE;
+	background-color: $CLASSIC_ORANGE;
+	border: 3px solid $LIGHT_GREY;
+}
+
+.formation2-middle-active
+{
+	color: white;
+	background-color: $lIGHT_GREEN;
 	border: 3px solid $LIGHT_GREY;
 }
 
@@ -384,60 +418,45 @@ FORMATION.PHP
 {
 	position: absolute;
 	text-align: justify;
+	display: flex;
 	height: 100%;
 	width: 100%;
 }
 
 .top-box
 {
-	height: 50%;
-	width: 100%;
-	min-width: 1500px;
+	margin: auto 0 auto 100px;
 }
 
 .bot-box
 {
-	height: 50%;
-	width: 100%;
-	min-width: 1500px;
+	margin: auto 100px auto 0px;
 }
 
 .top-left
 {
 	padding: 15px;
 	width: 500px;
-	float: left;
-	margin: 40px 0px 0px 85px;
-	border: 1px solid $CLASSIC-ORANGE;
-	border-style: outset;
+	margin: 40px 0px 0px 0px;
 }
 
 .top-right
 {
 	padding: 15px;
 	width: 500px;
-	float: right;
-	margin: 40px 85px 0px 0px;
-	border: 1px solid $CLASSIC-ORANGE;
-	border-style: outset;
+	margin: 40px 0px 0px 0px;
 }
 
 .bot-left
 {
 	padding: 15px;
 	width: 500px;
-	float: left;
 	margin: 40px 0px 0px 85px;
-	border: 1px solid $CLASSIC-ORANGE;
-	border-style: outset;
 }
 
 .bot-right
 {
 	padding: 15px;
 	width: 500px;
-	float: right;
 	margin: 40px 85px 0px 0px;
-	border: 1px solid $CLASSIC-ORANGE;
-	border-style: outset;
 }

@@ -10,7 +10,6 @@ GENERAL
 }
 /* line 28, ../sass/style.scss */
 body {
-  overflow-x: hidden;
   font-family: "expressway";
   margin: 0px;
   background-color: #e0dada;
@@ -41,6 +40,14 @@ a {
 }
 
 /* line 61, ../sass/style.scss */
+.full-band {
+  position: absolute;
+  height: 260px;
+  width: 100%;
+  z-index: 0;
+}
+
+/* line 69, ../sass/style.scss */
 .full-band-right {
   position: absolute;
   height: 350px;
@@ -49,7 +56,7 @@ a {
   z-index: 0;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .full-band-left {
   position: absolute;
   height: 350px;
@@ -58,16 +65,15 @@ a {
   z-index: 0;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .separation-band {
   position: absolute;
-  height: 230px;
-  width: 110vw;
-  margin-top: 25px;
+  height: 176px;
+  width: 100%;
   z-index: 1;
 }
 
-/* line 89, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .parallax {
   /* Full height */
   height: 100%;
@@ -78,67 +84,87 @@ a {
   background-size: cover;
 }
 
-/* line 102, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 .circle-base {
   border-radius: 50%;
   behavior: url(PIE.htc);
 }
 
-/* line 108, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .undisplayed {
   display: none;
 }
 
-/* line 114, ../sass/style.scss */
-.top-250 {
-  margin-top: 250px;
+/* line 121, ../sass/style.scss */
+.M-top-170 {
+  margin-top: 170px;
+}
+
+/* line 127, ../sass/style.scss */
+.P-top-30 {
+  padding-top: 30px;
 }
 
 /****************************************************************************
 COLOR
 ****************************************************************************/
-/* line 124, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .BG-light-green {
   background-color: #83c9aa;
 }
 
-/* line 129, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .BG-dark-grey {
   background-color: #cccaca;
 }
 
-/* line 134, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .BG-darker-grey {
   background-color: #6f6d6d;
 }
 
-/* line 140, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .BG-classic-orange-trans {
   background: rgba(167, 163, 162, 0.7);
+}
+
+/* line 158, ../sass/style.scss */
+.BG-lighter-green-trans {
+  background: rgba(167, 210, 191, 0.7);
+}
+
+/* line 164, ../sass/style.scss */
+.BC-classic-orange {
+  border: 1px solid #ff975f;
+}
+
+/* line 169, ../sass/style.scss */
+.BC-light-green {
+  border: 1px solid #83c9aa;
 }
 
 /****************************************************************************
 FOOTER.PHP
 ****************************************************************************/
-/* line 150, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 #footer-band {
   position: absolute;
   height: 80px;
-  width: 100vw;
+  width: 100%;
   z-index: 0;
 }
 
 /****************************************************************************
 SIDEMENU.PHP
 ****************************************************************************/
-/* line 163, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 #sidemenu {
   position: fixed;
   left: -305px;
   z-index: 3;
 }
 
-/* line 170, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .tab {
   border: 1px solid white;
   transition-duration: 0.5s;
@@ -149,19 +175,19 @@ SIDEMENU.PHP
   text-align: center;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .menu-icon {
   float: right;
 }
 
-/* line 186, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 .menu-link {
   display: flex;
   margin-top: 10;
   margin-right: 5px;
 }
 
-/* line 193, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .label-link {
   margin-right: 15px;
 }
@@ -169,13 +195,13 @@ SIDEMENU.PHP
 /****************************************************************************
 HOME.PHP
 ****************************************************************************/
-/* line 203, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 #door-frame {
   display: none;
   height: 100%;
 }
 
-/* line 209, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 #door1 {
   position: absolute;
   width: 0;
@@ -187,19 +213,19 @@ HOME.PHP
   border-color: #6f6d6d transparent;
 }
 
-/* line 221, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 .door1-open {
   transition-duration: 1.5s;
   transform: translate(0px, -1000px);
 }
 
-/* line 227, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .door2-open {
   transition-duration: 1.5s;
   transform: translate(-2000px, 0px);
 }
 
-/* line 233, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 #door2 {
   position: absolute;
   width: 0;
@@ -211,19 +237,19 @@ HOME.PHP
   border-color: transparent #cccaca;
 }
 
-/* line 245, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 #door-box {
   margin: auto;
   margin-bottom: 50vh;
 }
 
-/* line 251, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .title-box {
   position: relative;
   text-align: center;
 }
 
-/* line 257, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 #enter-box {
   position: relative;
   text-align: center;
@@ -234,40 +260,40 @@ HOME.PHP
   margin: auto;
 }
 
-/* line 268, ../sass/style.scss */
+/* line 296, ../sass/style.scss */
 #enter-box:hover {
   cursor: pointer;
   background-color: #2d9034;
 }
 
-/* line 275, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .BG-home {
   background-image: url("../img/background/home.jpg");
 }
 
-/* line 281, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 .BG-formation {
   background-image: url("../img/background/formation.jpg");
 }
 
-/* line 286, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 .BG-exppro {
   background-image: url("../img/background/exppro.jpg");
 }
 
-/* line 291, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .BG-project {
   background-image: url("../img/background/project.png");
 }
 
-/* line 297, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 .centered-box {
   height: 320px;
   margin: auto;
   margin-top: 30px;
 }
 
-/* line 304, ../sass/style.scss */
+/* line 332, ../sass/style.scss */
 .text-box {
   width: 70vw;
   margin-left: 15vw;
@@ -276,7 +302,7 @@ HOME.PHP
   background: rgba(165, 159, 159, 0.5);
 }
 
-/* line 313, ../sass/style.scss */
+/* line 341, ../sass/style.scss */
 .link-button {
   display: flex;
   position: relative;
@@ -288,7 +314,7 @@ HOME.PHP
   margin: auto;
 }
 
-/* line 325, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .link-button:hover {
   background: #83c9aa;
 }
@@ -296,112 +322,103 @@ HOME.PHP
 /****************************************************************************************************
 FORMATION.PHP
 ****************************************************************************************************/
-/* line 335, ../sass/style.scss */
+/* line 363, ../sass/style.scss */
 .BG-SIO {
   width: 100%;
   height: 100%;
-  position: absolute;
   background-image: url("../img/background/lycee.jpg");
 }
 
-/* line 343, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 .BG-STI {
   width: 100%;
   height: 100%;
-  position: absolute;
   background-image: url("../img/background/lycee2.jpg");
 }
 
-/* line 351, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 .formation-box {
   display: flex;
   background-color: #cccaca;
   min-height: 900px;
+  height: 100%;
 }
 
-/* line 358, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 .formation-middle {
   z-index: 1;
   display: flex;
   cursor: pointer;
   margin: auto;
-  width: 260px;
+  min-width: 260px;
   height: 260px;
   border: 3px solid #e0dada;
 }
 
-/* line 369, ../sass/style.scss */
-.formation-middle-active {
+/* line 396, ../sass/style.scss */
+.formation1-middle-active {
   color: white;
   background-color: #ff975f;
   border: 3px solid #e0dada;
 }
 
-/* line 376, ../sass/style.scss */
+/* line 403, ../sass/style.scss */
+.formation2-middle-active {
+  color: white;
+  background-color: #83c9aa;
+  border: 3px solid #e0dada;
+}
+
+/* line 410, ../sass/style.scss */
 .formation-label {
   cursor: pointer;
   font-size: 40px;
   margin: auto;
 }
 
-/* line 383, ../sass/style.scss */
+/* line 417, ../sass/style.scss */
 .formation-content {
   position: absolute;
   text-align: justify;
+  display: flex;
   height: 100%;
   width: 100%;
 }
 
-/* line 391, ../sass/style.scss */
+/* line 426, ../sass/style.scss */
 .top-box {
-  height: 50%;
-  width: 100%;
-  min-width: 1500px;
+  margin: auto 0 auto 100px;
 }
 
-/* line 398, ../sass/style.scss */
+/* line 431, ../sass/style.scss */
 .bot-box {
-  height: 50%;
-  width: 100%;
-  min-width: 1500px;
+  margin: auto 100px auto 0px;
 }
 
-/* line 405, ../sass/style.scss */
+/* line 436, ../sass/style.scss */
 .top-left {
   padding: 15px;
   width: 500px;
-  float: left;
-  margin: 40px 0px 0px 85px;
-  border: 1px solid #ff975f;
-  border-style: outset;
+  margin: 40px 0px 0px 0px;
 }
 
-/* line 415, ../sass/style.scss */
+/* line 443, ../sass/style.scss */
 .top-right {
   padding: 15px;
   width: 500px;
-  float: right;
-  margin: 40px 85px 0px 0px;
-  border: 1px solid #ff975f;
-  border-style: outset;
+  margin: 40px 0px 0px 0px;
 }
 
-/* line 425, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 .bot-left {
   padding: 15px;
   width: 500px;
-  float: left;
   margin: 40px 0px 0px 85px;
-  border: 1px solid #ff975f;
-  border-style: outset;
 }
 
-/* line 435, ../sass/style.scss */
+/* line 457, ../sass/style.scss */
 .bot-right {
   padding: 15px;
   width: 500px;
-  float: right;
   margin: 40px 85px 0px 0px;
-  border: 1px solid #ff975f;
-  border-style: outset;
 }

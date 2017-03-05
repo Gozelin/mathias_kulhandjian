@@ -2,26 +2,45 @@
 //toggle le texte des formations & change le style du bouton
 function toggleText(id)
 {
-	if($("#"+id).find((".formation-content")).hasClass("undisplayed"))
+	if($("#"+id).find(".top-box, .bot-box").hasClass("undisplayed"))
 	{
+		console.log(id);
 		//bouton
-		$("#"+id).find(".formation-middle").removeClass("hvr-radial-out");
-		$("#"+id).find(".formation-middle").addClass("formation-middle-active");
+		switch(id)
+		{
+			case "formation1":
+				$("#"+id).find(".formation-middle").removeClass("hvr-radial-out-orange");
+				break;
+			case "formation2":
+				$("#"+id).find(".formation-middle").removeClass("hvr-radial-out-green");
+				break;
+		}
+
+		$("#"+id).find(".formation-middle").addClass(id+"-middle-active");
 		//texte
-		$("#"+id).find((".formation-content")).removeClass("undisplayed");
-		$("#"+id).find((".formation-content")).removeClass("holeOut");
-		$("#"+id).find((".formation-content")).addClass("magictime swashIn");
+		$("#"+id).find(".top-box, .bot-box").removeClass("undisplayed");
+		$("#"+id).find(".top-box, .bot-box").removeClass("holeOut");
+		$("#"+id).find(".top-box, .bot-box").addClass("magictime swashIn");
 	}
 	else
 	{
 		//bouton
-		$("#"+id).find(".formation-middle").addClass("hvr-radial-out");
-		$("#"+id).find(".formation-middle").removeClass("formation-middle-active");
+		switch(id)
+		{
+			case "formation1":
+				$("#"+id).find(".formation-middle").addClass("hvr-radial-out-orange");
+				break;
+			case "formation2":
+				$("#"+id).find(".formation-middle").addClass("hvr-radial-out-green");
+				break;
+		}
+
+		$("#"+id).find(".formation-middle").removeClass(id+"-middle-active");
 		//texte
-		$("#"+id).find((".formation-content")).removeClass("swashIn");
-		$("#"+id).find((".formation-content")).addClass("magictime holeOut");
+		$("#"+id).find(".top-box, .bot-box").removeClass("swashIn");
+		$("#"+id).find(".top-box, .bot-box").addClass("magictime holeOut");
 		setTimeout(function(){
-			$("#"+id).find((".formation-content")).addClass("undisplayed");
+			$("#"+id).find(".top-box, .bot-box").addClass("undisplayed");
 		}, 500
 		);
 	}

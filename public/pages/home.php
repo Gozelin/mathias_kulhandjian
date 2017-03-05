@@ -11,7 +11,7 @@ include("../src/token_giver.php");
 		<title>Mathias Kulhandjian</title>
 		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 		<script src="js/jquery-3.1.1.min.js"></script>
-		<script src="js/function.js"></script>
+		<script src="../src/function.js"></script>
 	</head>
 	<body>
 		<!-- DOORS -->
