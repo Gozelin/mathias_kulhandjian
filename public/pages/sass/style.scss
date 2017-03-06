@@ -33,7 +33,7 @@ body
 	background-color: $LIGHT_GREY;
 }
 
-#page-content
+#home-content
 {
 	display: none;
 }
@@ -52,6 +52,11 @@ a
 	text-decoration: none;
 }
 
+.over-x-hid
+{
+ overflow-x: hidden;
+}
+
 //band
 .band-box
 {
@@ -60,7 +65,6 @@ a
 
 .full-band
 {
-	position: absolute;
 	height: 260px;
 	width: 100%;
 	z-index:0;
@@ -121,6 +125,11 @@ a
 .M-top-170
 {
 	margin-top: 170px;
+}
+
+.M-top-450
+{
+	margin-top: 450px;
 }
 
 //padding
@@ -374,6 +383,27 @@ FORMATION.PHP
 	background-image: url('../img/background/lycee2.jpg');
 }
 
+//button
+.button-middle
+{
+	z-index: 1;
+	display: flex;
+	cursor: pointer;
+	margin: auto;
+	min-width: 280px;
+	width: 280px;
+	height: 280px;
+	border: 3px solid $LIGHT_GREY;
+}
+
+.button-label
+{
+	cursor: pointer;
+	font-size: 40px;
+	margin: auto;
+}
+
+//others
 .formation-box
 {
 	display: flex;
@@ -382,36 +412,18 @@ FORMATION.PHP
 	height: 100%
 }
 
-.formation-middle
-{
-	z-index: 1;
-	display: flex;
-	cursor: pointer;
-	margin: auto;
-	min-width: 260px;
-	height: 260px;
-	border: 3px solid $LIGHT_GREY;
-}
-
-.formation1-middle-active
+.button-middle-active-ora
 {
 	color: white;
 	background-color: $CLASSIC_ORANGE;
 	border: 3px solid $LIGHT_GREY;
 }
 
-.formation2-middle-active
+.button-middle-active-gre
 {
 	color: white;
 	background-color: $lIGHT_GREEN;
 	border: 3px solid $LIGHT_GREY;
-}
-
-.formation-label
-{
-	cursor: pointer;
-	font-size: 40px;
-	margin: auto;
 }
 
 .formation-content
@@ -460,3 +472,90 @@ FORMATION.PHP
 	width: 500px;
 	margin: 40px 85px 0px 0px;
 }
+
+/****************************************************************************************************
+EXPPRO.PHP
+****************************************************************************************************/
+#exppro-content
+{
+
+}
+
+.triangle-box
+{
+	position: relative;
+	width: 100%;
+}
+
+.triangle-left
+{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 570px 2075.8px 550px 0px;
+	border-color: transparent $DARKER_GREY transparent;
+}
+
+.triangle-title-left
+{
+	float: left;
+	text-align: center;
+	margin-left: 60%;
+	margin-top: 450px;
+}
+
+.triangle-right
+{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 511px 0 527px 1940.8px;
+	border-color: transparent transparent transparent $lIGHT_GREEN;
+}
+
+.triangle-title-right
+{
+	float: right;
+	text-align: center;
+	margin-right: 60%;
+	margin-top: 450px;
+}
+
+.triangle-text
+{
+	text-align: justify;
+	position: absolute;
+	padding: 25px;
+}
+
+#exppro1
+{
+}
+
+#exppro2
+{
+	transition-duration: 1.5s;
+	transform: translate(0, -550px);
+}
+
+#exppro3
+{
+	transition-duration: 1.5s;
+	transform: translate(0, -1120px);
+}
+
+#E-button1
+{
+	z-index: 4;
+}
+
+#E-button2
+{
+	z-index: 3;
+}
+
+#E-button3
+{
+	z-index: 2;
+}
+

@@ -16,14 +16,15 @@
 	</head>
 	<body>
 		<?php include("sidemenu.php") ?>
-		<div class="full-band BG-light-green"></div>
-		<div class="P-top-30">
-			<h1 class="title-box">
-				<?php echo TITLE_FORMATION ?>
-			</h1>
+		<div class="full-band BG-light-green">
+			<div class="P-top-30">
+				<h1 class="title-box">
+					<?php echo TITLE_FORMATION ?>
+				</h1>
+			</div>
 		</div>
 		<!-- BTS SIO -->
-		<div class="BG-SIO parallax formation-box M-top-170">
+		<div class="BG-SIO parallax formation-box">
 			<!-- INFO CONTENT -->
 			<div id="formation1" class="formation-content">
 				<!-- TOP BOX -->
@@ -40,8 +41,8 @@
 					</div>
 				</div>
 				<!-- MIDDLE BUTTON -->
-				<div class="circle-base formation-middle hvr-radial-out-orange">
-					<label class="formation-label"><?php echo BTSSIO ?></label>
+				<div id="F-button1" class="circle-base button-middle hvr-radial-out-ora">
+					<label class="button-label"><?php echo BTSSIO ?></label>
 				</div>
 				<!-- BOT BOX -->
 				<div class="bot-box undisplayed">
@@ -78,8 +79,8 @@
 					</div>
 				</div>
 				<!-- MIDDLE BUTTON -->
-				<div class="circle-base formation-middle hvr-radial-out-green">
-					<label class="formation-label"><?php echo STI2D ?></label>
+				<div id="F-button2" class="circle-base button-middle hvr-radial-out-gre">
+					<label class="button-label"><?php echo STI2D ?></label>
 				</div>
 				<div class="bot-box undisplayed">
 					<div class="top-left BG-lighter-green-trans">
@@ -101,8 +102,9 @@
 
 <script>
 $(document).ready(function(){
-	$(".formation-middle").click(function(){
-		toggleText($(this).parent().attr('id'));
+	$(".button-middle").click(function(){
+		toggleFormation($(this).parent().attr('id'));
+		toggleButton($(this).attr("id"));
 	});
 
 });

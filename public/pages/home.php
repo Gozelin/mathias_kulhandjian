@@ -13,7 +13,7 @@ include("../src/token_giver.php");
 		<script src="js/jquery-3.1.1.min.js"></script>
 		<script src="../src/function.js"></script>
 	</head>
-	<body>
+	<body class="over-x-hid">
 		<!-- DOORS -->
 		<div id="door-frame">
 			<!-- 1st door -->
@@ -34,7 +34,7 @@ include("../src/token_giver.php");
 			</div>
 		</div>
 		<!-- CONTENT -->
-		<div id="page-content">
+		<div id="home-content">
 			<!-- SIDE MENU -->
 			<?php include("sidemenu.php") ?>
 			<!-- PRESENTATION -->
@@ -127,14 +127,14 @@ $(document).ready(function(){
 	}
 	else
 	{
-		$("#page-content").fadeIn(200, function(){});
+		$("#home-content").fadeIn(200, function(){});
 	}
 });
 
 $("#enter-box").on("click", function() {
 	$("#door-box").fadeOut(1000, function(){});
 	$("#door-frame").fadeOut(800, function(){
-		$("#page-content").fadeIn(200, function(){});
+		$("#home-content").fadeIn(200, function(){});
 	});
 	$("#door1").addClass("door1-open");
 	$("#door2").addClass("door2-open");
