@@ -48,10 +48,9 @@ a {
 .full-band {
   height: 260px;
   width: 100%;
-  z-index: 0;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 .full-band-right {
   position: absolute;
   height: 350px;
@@ -60,7 +59,7 @@ a {
   z-index: 0;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 .full-band-left {
   position: absolute;
   height: 350px;
@@ -69,7 +68,7 @@ a {
   z-index: 0;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .separation-band {
   position: absolute;
   height: 176px;
@@ -77,7 +76,7 @@ a {
   z-index: 1;
 }
 
-/* line 100, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .parallax {
   /* Full height */
   height: 100%;
@@ -88,28 +87,28 @@ a {
   background-size: cover;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 .circle-base {
   border-radius: 50%;
   behavior: url(PIE.htc);
 }
 
-/* line 119, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .undisplayed {
   display: none;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .M-top-170 {
   margin-top: 170px;
 }
 
-/* line 130, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .M-top-450 {
   margin-top: 450px;
 }
 
-/* line 136, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .P-top-30 {
   padding-top: 30px;
 }
@@ -117,37 +116,37 @@ a {
 /****************************************************************************
 COLOR
 ****************************************************************************/
-/* line 146, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 .BG-light-green {
   background-color: #83c9aa;
 }
 
-/* line 151, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .BG-dark-grey {
   background-color: #cccaca;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .BG-darker-grey {
   background-color: #6f6d6d;
 }
 
-/* line 162, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .BG-classic-orange-trans {
   background: rgba(167, 163, 162, 0.7);
 }
 
-/* line 167, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .BG-lighter-green-trans {
   background: rgba(167, 210, 191, 0.7);
 }
 
-/* line 173, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .BC-classic-orange {
   border: 1px solid #ff975f;
 }
 
-/* line 178, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .BC-light-green {
   border: 1px solid #83c9aa;
 }
@@ -155,7 +154,7 @@ COLOR
 /****************************************************************************
 FOOTER.PHP
 ****************************************************************************/
-/* line 187, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 #footer-band {
   position: absolute;
   height: 80px;
@@ -166,14 +165,14 @@ FOOTER.PHP
 /****************************************************************************
 SIDEMENU.PHP
 ****************************************************************************/
-/* line 200, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 #sidemenu {
   position: fixed;
   left: -305px;
   z-index: 3;
 }
 
-/* line 207, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .tab {
   border: 1px solid white;
   transition-duration: 0.5s;
@@ -184,19 +183,19 @@ SIDEMENU.PHP
   text-align: center;
 }
 
-/* line 218, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .menu-icon {
   float: right;
 }
 
-/* line 223, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 .menu-link {
   display: flex;
   margin-top: 10;
   margin-right: 5px;
 }
 
-/* line 230, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .label-link {
   margin-right: 15px;
 }
@@ -204,13 +203,13 @@ SIDEMENU.PHP
 /****************************************************************************
 HOME.PHP
 ****************************************************************************/
-/* line 240, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 #door-frame {
   display: none;
   height: 100%;
 }
 
-/* line 246, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 #door1 {
   position: absolute;
   width: 0;
@@ -222,19 +221,19 @@ HOME.PHP
   border-color: #6f6d6d transparent;
 }
 
-/* line 258, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 .door1-open {
   transition-duration: 1.5s;
   transform: translate(0px, -1000px);
 }
 
-/* line 264, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .door2-open {
   transition-duration: 1.5s;
   transform: translate(-2000px, 0px);
 }
 
-/* line 270, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 #door2 {
   position: absolute;
   width: 0;
@@ -246,19 +245,19 @@ HOME.PHP
   border-color: transparent #cccaca;
 }
 
-/* line 282, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 #door-box {
   margin: auto;
   margin-bottom: 50vh;
 }
 
-/* line 288, ../sass/style.scss */
+/* line 287, ../sass/style.scss */
 .title-box {
   position: relative;
   text-align: center;
 }
 
-/* line 294, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 #enter-box {
   position: relative;
   text-align: center;
@@ -269,40 +268,40 @@ HOME.PHP
   margin: auto;
 }
 
-/* line 305, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 #enter-box:hover {
   cursor: pointer;
   background-color: #2d9034;
 }
 
-/* line 312, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .BG-home {
   background-image: url("../img/background/home.jpg");
 }
 
-/* line 318, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 .BG-formation {
   background-image: url("../img/background/formation.jpg");
 }
 
-/* line 323, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 .BG-exppro {
   background-image: url("../img/background/exppro.jpg");
 }
 
-/* line 328, ../sass/style.scss */
+/* line 327, ../sass/style.scss */
 .BG-project {
   background-image: url("../img/background/project.png");
 }
 
-/* line 334, ../sass/style.scss */
+/* line 333, ../sass/style.scss */
 .centered-box {
   height: 320px;
   margin: auto;
   margin-top: 30px;
 }
 
-/* line 341, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .text-box {
   width: 70vw;
   margin-left: 15vw;
@@ -311,7 +310,7 @@ HOME.PHP
   background: rgba(165, 159, 159, 0.5);
 }
 
-/* line 350, ../sass/style.scss */
+/* line 349, ../sass/style.scss */
 .link-button {
   display: flex;
   position: relative;
@@ -323,7 +322,7 @@ HOME.PHP
   margin: auto;
 }
 
-/* line 362, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 .link-button:hover {
   background: #83c9aa;
 }
@@ -331,23 +330,23 @@ HOME.PHP
 /****************************************************************************************************
 FORMATION.PHP
 ****************************************************************************************************/
-/* line 372, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 .BG-SIO {
   width: 100%;
   height: 100%;
   background-image: url("../img/background/lycee.jpg");
 }
 
-/* line 379, ../sass/style.scss */
+/* line 378, ../sass/style.scss */
 .BG-STI {
   width: 100%;
   height: 100%;
   background-image: url("../img/background/lycee2.jpg");
 }
 
-/* line 387, ../sass/style.scss */
+/* line 386, ../sass/style.scss */
 .button-middle {
-  z-index: 1;
+  z-index: 2;
   display: flex;
   cursor: pointer;
   margin: auto;
@@ -357,14 +356,14 @@ FORMATION.PHP
   border: 3px solid #e0dada;
 }
 
-/* line 399, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 .button-label {
   cursor: pointer;
   font-size: 40px;
   margin: auto;
 }
 
-/* line 407, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 .formation-box {
   display: flex;
   background-color: #cccaca;
@@ -372,21 +371,21 @@ FORMATION.PHP
   height: 100%;
 }
 
-/* line 415, ../sass/style.scss */
+/* line 414, ../sass/style.scss */
 .button-middle-active-ora {
   color: white;
   background-color: #ff975f;
   border: 3px solid #e0dada;
 }
 
-/* line 422, ../sass/style.scss */
+/* line 421, ../sass/style.scss */
 .button-middle-active-gre {
   color: white;
   background-color: #83c9aa;
   border: 3px solid #e0dada;
 }
 
-/* line 429, ../sass/style.scss */
+/* line 428, ../sass/style.scss */
 .formation-content {
   position: absolute;
   text-align: justify;
@@ -395,38 +394,38 @@ FORMATION.PHP
   width: 100%;
 }
 
-/* line 438, ../sass/style.scss */
+/* line 437, ../sass/style.scss */
 .top-box {
   margin: auto 0 auto 100px;
 }
 
-/* line 443, ../sass/style.scss */
+/* line 442, ../sass/style.scss */
 .bot-box {
   margin: auto 100px auto 0px;
 }
 
-/* line 448, ../sass/style.scss */
+/* line 447, ../sass/style.scss */
 .top-left {
   padding: 15px;
   width: 500px;
   margin: 40px 0px 0px 0px;
 }
 
-/* line 455, ../sass/style.scss */
+/* line 454, ../sass/style.scss */
 .top-right {
   padding: 15px;
   width: 500px;
   margin: 40px 0px 0px 0px;
 }
 
-/* line 462, ../sass/style.scss */
+/* line 461, ../sass/style.scss */
 .bot-left {
   padding: 15px;
   width: 500px;
   margin: 40px 0px 0px 85px;
 }
 
-/* line 469, ../sass/style.scss */
+/* line 468, ../sass/style.scss */
 .bot-right {
   padding: 15px;
   width: 500px;
@@ -436,76 +435,108 @@ FORMATION.PHP
 /****************************************************************************************************
 EXPPRO.PHP
 ****************************************************************************************************/
-/* line 484, ../sass/style.scss */
+/* line 483, ../sass/style.scss */
 .triangle-box {
   position: relative;
   width: 100%;
 }
 
-/* line 490, ../sass/style.scss */
-.triangle-left {
-  width: 0;
+/* line 489, ../sass/style.scss */
+.triangle-text {
+  text-align: justify;
+  position: relative;
+  opacity: 0;
   height: 0;
-  border-style: solid;
-  border-width: 570px 2075.8px 550px 0px;
-  border-color: transparent #6f6d6d transparent;
+  padding: 0 25px;
+  transition: opacity .4s ease, height .8s ease;
 }
 
 /* line 499, ../sass/style.scss */
-.triangle-title-left {
-  float: left;
-  text-align: center;
-  margin-left: 60%;
-  margin-top: 450px;
+.triangle-text-show0 {
+  height: 100%;
+  opacity: 1;
+  transition: opacity .4s .4s ease, height .8s ease;
 }
 
-/* line 507, ../sass/style.scss */
-.triangle-right {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 511px 0 527px 1940.8px;
-  border-color: transparent transparent transparent #83c9aa;
+/* line 506, ../sass/style.scss */
+.triangle-text-show1 {
+  height: 100%;
+  opacity: 1;
+  transition: opacity .4s .4s ease, height .8s ease;
+  transform: translate3d(0, -30%, 0);
 }
 
-/* line 516, ../sass/style.scss */
-.triangle-title-right {
-  float: right;
-  text-align: center;
-  margin-right: 60%;
-  margin-top: 450px;
+/* line 514, ../sass/style.scss */
+.triangle-text-show2 {
+  height: 100%;
+  opacity: 1;
+  transition: opacity .4s .4s ease, height .8s ease;
+  transform: translate3d(0, -80%, 0);
 }
 
-/* line 524, ../sass/style.scss */
-.triangle-text {
-  text-align: justify;
+/* line 522, ../sass/style.scss */
+svg {
+  z-index: -1;
+}
+
+/* line 528, ../sass/style.scss */
+.triangle {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+
+/* line 536, ../sass/style.scss */
+.exppro-button {
+  width: inherit;
+}
+/* line 540, ../sass/style.scss */
+.exppro-button .circle-base {
   position: absolute;
-  padding: 25px;
-}
-
-/* line 535, ../sass/style.scss */
-#exppro2 {
-  transition-duration: 1.5s;
-  transform: translate(0, -550px);
-}
-
-/* line 541, ../sass/style.scss */
-#exppro3 {
-  transition-duration: 1.5s;
-  transform: translate(0, -1120px);
+  text-align: center;
 }
 
 /* line 547, ../sass/style.scss */
+#E-button0 {
+  left: 60%;
+  transform: translate3d(0, 100%, 0);
+}
+
+/* line 553, ../sass/style.scss */
 #E-button1 {
-  z-index: 4;
+  left: 20%;
+  transform: translate3d(0, -50%, 0);
 }
 
-/* line 552, ../sass/style.scss */
+/* line 558, ../sass/style.scss */
 #E-button2 {
-  z-index: 3;
+  left: 60%;
+  transform: translate3d(0, -200%, 0);
 }
 
-/* line 557, ../sass/style.scss */
-#E-button3 {
-  z-index: 2;
+/* line 569, ../sass/style.scss */
+#exppro1 {
+  transition-duration: 1.5s;
+  transform: translate3d(0, -50%, 0);
+}
+
+/* line 576, ../sass/style.scss */
+#exppro2 {
+  transition-duration: 1.5s;
+  transform: translate3d(0, -200%, 0);
+}
+
+/* line 592, ../sass/style.scss */
+#exppro0 .triangle {
+  fill: #6f6d6d;
+}
+
+/* line 592, ../sass/style.scss */
+#exppro1 .triangle {
+  fill: #83c9aa;
+}
+
+/* line 592, ../sass/style.scss */
+#exppro2 .triangle {
+  fill: #cccaca;
 }

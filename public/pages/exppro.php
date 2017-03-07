@@ -4,7 +4,6 @@
 
 ?>
 
-
 <html>
 	<head>
 		<title>Mathias Kulhandjian</title>
@@ -24,41 +23,49 @@
 			</div>
 		</div>
 		<div id="exppro-content">
-			<div id="exppro1" class="triangle-box">
-				<div id="E-button1" class="triangle-title-left circle-base button-middle hvr-radial-out-ora">
+			<div class="exppro-button">
+				<div id="E-button0" class="circle-base button-middle hvr-radial-out-gre">
 					<label class="button-label"><?php echo EXPPRO1 ?></label>
 				</div>
-				<div class="triangle-left">
-				</div>
-				<div class="triangle-text undisplayed">
-					<h1>
-						Curabitur non lacus dapibus, maximus erat et, suscipit leo. Fusce pulvinar vel felis eget iaculis. Sed condimentum libero at tortor porttitor, eu volutpat est convallis. Vivamus mattis nisi a dictum auctor. Nulla sed eros erat. Pellentesque ac lacus sed nulla hendrerit ornare. Donec fringilla elementum nulla sed scelerisque. Integer vel condimentum augue, at semper augue. Donec congue, turpis eu accumsan luctus, felis nisl consectetur dolor, eget ornare diam ante efficitur ex. Curabitur condimentum vulputate lectus. Etiam id consectetur leo, in imperdiet est. Vivamus rutrum lacus dolor, ut mollis turpis feugiat et. Phasellus auctor suscipit mauris, vel euismod sapien vulputate sit amet. Fusce mollis arcu vel dignissim vehicula.
-					</h1>
+			</div>
+			<div id="exppro0" class="triangle-box">
+				<div class=triangle>
+					<svg viewBox="0 0 100 50">
+	  					<polygon points="100 0, 100 50, 0 25"></polygon>
+					</svg>
 				</div>
 			</div>
-			<div id="exppro2" class="triangle-box">
-				<div id="E-button2" class="triangle-title-right circle-base button-middle hvr-radial-out-ora">
+			<div class="triangle-text" data-link="exppro0">
+				<h1>
+					Curabitur non lacus dapibus, maximus erat et, suscipit leo. Fusce pulvinar vel felis eget iaculis. Sed condimentum libero at tortor porttitor, eu volutpat est convallis. Vivamus mattis nisi a dictum auctor. Nulla sed eros erat. Pellentesque ac lacus sed nulla hendrerit ornare. Donec fringilla elementum nulla sed scelerisque. Integer vel condimentum augue, at semper augue. Donec congue, turpis eu accumsan luctus, felis nisl consectetur dolor, eget ornare diam ante efficitur ex. Curabitur condimentum vulputate lectus. Etiam id consectetur leo, in imperdiet est. Vivamus rutrum lacus dolor, ut mollis turpis feugiat et. Phasellus auctor suscipit mauris, vel euismod sapien vulputate sit amet. Fusce mollis arcu vel dignissim vehicula.
+				</h1>
+			</div>
+			<div class="exppro-button">
+				<div id="E-button1" class="circle-base button-middle hvr-radial-out-ora">
 					<label class="button-label"><?php echo EXPPRO2 ?></label>
 				</div>
-				<div class="triangle-right">
-				</div>
-				<div class="triangle-text undisplayed">
-					<h1>
-						Curabitur non lacus dapibus, maximus erat et, suscipit leo. Fusce pulvinar vel felis eget iaculis. Sed condimentum libero at tortor porttitor, eu volutpat est convallis. Vivamus mattis nisi a dictum auctor. Nulla sed eros erat. Pellentesque ac lacus sed nulla hendrerit ornare. Donec fringilla elementum nulla sed scelerisque. Integer vel condimentum augue, at semper augue. Donec congue, turpis eu accumsan luctus, felis nisl consectetur dolor, eget ornare diam ante efficitur ex. Curabitur condimentum vulputate lectus. Etiam id consectetur leo, in imperdiet est. Vivamus rutrum lacus dolor, ut mollis turpis feugiat et. Phasellus auctor suscipit mauris, vel euismod sapien vulputate sit amet. Fusce mollis arcu vel dignissim vehicula.
-					</h1>
+			</div>
+			<div id="exppro1" class="triangle-box">
+				<div class=triangle>
+					<svg viewBox="0 0 100 50">
+	  					<polygon points="0 0, 0 50, 100 25"></polygon>
+					</svg>
 				</div>
 			</div>
-			<div id="exppro3" class="triangle-box">
-				<div id="E-button3" class="triangle-title-left circle-base button-middle hvr-radial-out-ora">
-					<label class="button-label"><?php echo EXPPRO1 ?></label>
+			<div class="triangle-text" data-link="exppro1">
+				<h1>
+					Curabitur non lacus dapibus, maximus erat et, suscipit leo. Fusce pulvinar vel felis eget iaculis. Sed condimentum libero at tortor porttitor, eu volutpat est convallis. Vivamus mattis nisi a dictum auctor. Nulla sed eros erat. Pellentesque ac lacus sed nulla hendrerit ornare. Donec fringilla elementum nulla sed scelerisque. Integer vel condimentum augue, at semper augue. Donec congue, turpis eu accumsan luctus, felis nisl consectetur dolor, eget ornare diam ante efficitur ex. Curabitur condimentum vulputate lectus. Etiam id consectetur leo, in imperdiet est. Vivamus rutrum lacus dolor, ut mollis turpis feugiat et. Phasellus auctor suscipit mauris, vel euismod sapien vulputate sit amet. Fusce mollis arcu vel dignissim vehicula.
+					Curabitur non lacus dapibus, maximus erat et, suscipit leo. Fusce pulvinar vel felis eget iaculis. Sed condimentum libero at tortor porttitor, eu volutpat est convallis. Vivamus mattis nisi a dictum auctor. Nulla sed eros erat. Pellentesque ac lacus sed nulla hendrerit ornare. Donec fringilla elementum nulla sed scelerisque. Integer vel condimentum augue, at semper augue. Donec congue, turpis eu accumsan luctus, felis nisl consectetur dolor, eget ornare diam ante efficitur ex. Curabitur condimentum vulputate lectus. Etiam id consectetur leo, in imperdiet est. Vivamus rutrum lacus dolor, ut mollis turpis feugiat et. Phasellus auctor suscipit mauris, vel euismod sapien vulputate sit amet. Fusce mollis arcu vel dignissim vehicula.
+					Curabitur non lacus dapibus, maximus erat et, suscipit leo. Fusce pulvinar vel felis eget iaculis. Sed condimentum libero at tortor porttitor, eu volutpat est convallis. Vivamus mattis nisi a dictum auctor. Nulla sed eros erat. Pellentesque ac lacus sed nulla hendrerit ornare. Donec fringilla elementum nulla sed scelerisque. Integer vel condimentum augue, at semper augue. Donec congue, turpis eu accumsan luctus, felis nisl consectetur dolor, eget ornare diam ante efficitur ex. Curabitur condimentum vulputate lectus. Etiam id consectetur leo, in imperdiet est. Vivamus rutrum lacus dolor, ut mollis turpis feugiat et. Phasellus auctor suscipit mauris, vel euismod sapien vulputate sit amet. Fusce mollis arcu vel dignissim vehicula.
+				</h1>
+			</div>
+			<div id="exppro2" class="triangle-box">
+				<div class=triangle>
+					<svg viewBox="0 0 100 25">
+	  					<polygon points="100 0, 100 25, 0 25"></polygon>
+					</svg>
 				</div>
-				<div class="triangle-left">
-				</div>
-				<div class="triangle-text undisplayed">
-					<h1>
-						Curabitur non lacus dapibus, maximus erat et, suscipit leo. Fusce pulvinar vel felis eget iaculis. Sed condimentum libero at tortor porttitor, eu volutpat est convallis. Vivamus mattis nisi a dictum auctor. Nulla sed eros erat. Pellentesque ac lacus sed nulla hendrerit ornare. Donec fringilla elementum nulla sed scelerisque. Integer vel condimentum augue, at semper augue. Donec congue, turpis eu accumsan luctus, felis nisl consectetur dolor, eget ornare diam ante efficitur ex. Curabitur condimentum vulputate lectus. Etiam id consectetur leo, in imperdiet est. Vivamus rutrum lacus dolor, ut mollis turpis feugiat et. Phasellus auctor suscipit mauris, vel euismod sapien vulputate sit amet. Fusce mollis arcu vel dignissim vehicula.
-					</h1>
-				</div>
+				<?php include("footer.php"); ?>
 			</div>
 		</div>
 	</body>
@@ -67,7 +74,7 @@
 <script>
 $(document).ready(function(){
 	$(".button-middle").click(function(){
-		toggleExppro($(this).parents(".triangle-box").attr('id'));
+		toggleExppro($(this).parent().next(".triangle-box").attr('id'));
 		toggleButton($(this).attr("id"));
 	});
 

@@ -21,21 +21,16 @@ function toggleFormation(id)
 //baisse la div exppro d'en dessous pour découvrir le text
 function toggleExppro(id)
 {
-	nextId = id.substr(id.length - 1);
-	nextId = "#exppro"+(parseInt(nextId)+1);
-	if($("#"+id).find(".triangle-text").hasClass("undisplayed"))
+	var noId = id.substr(-1, 1);
+	var $triangleText = $('[data-link="' + id + '"]');
+
+	if($triangleText.hasClass("triangle-text-show"+noId))
 	{
-		$(nextId).css({"margin-top": "810px"});
-
-			$("#"+id).find(".triangle-text").removeClass("undisplayed");
-
+		$triangleText.removeClass("triangle-text-show"+noId);
 	}
 	else
 	{
-		$(nextId).css({"margin-top": "0"});
-		setTimeout(function(){
-			$("#"+id).find(".triangle-text").addClass("undisplayed");
-		}, 1000);
+		$triangleText.addClass("triangle-text-show"+noId);
 	}
 }
 
