@@ -67,7 +67,6 @@ a
 {
 	height: 260px;
 	width: 100%;
-	z-index:0;
 }
 
 .full-band-right
@@ -386,7 +385,7 @@ FORMATION.PHP
 //button
 .button-middle
 {
-	z-index: 1;
+	z-index: 2;
 	display: flex;
 	cursor: pointer;
 	margin: auto;
@@ -487,75 +486,80 @@ EXPPRO.PHP
 	width: 100%;
 }
 
-.triangle-left
-{
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 570px 2075.8px 550px 0px;
-	border-color: transparent $DARKER_GREY transparent;
-}
-
-.triangle-title-left
-{
-	float: left;
-	text-align: center;
-	margin-left: 60%;
-	margin-top: 450px;
-}
-
-.triangle-right
-{
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 511px 0 527px 1940.8px;
-	border-color: transparent transparent transparent $lIGHT_GREEN;
-}
-
-.triangle-title-right
-{
-	float: right;
-	text-align: center;
-	margin-right: 60%;
-	margin-top: 450px;
-}
-
 .triangle-text
 {
 	text-align: justify;
-	position: absolute;
-	padding: 25px;
+	position: relative;
+	opacity: 0;
+	height: 0;
+	padding: 0 25px;
+	transition: opacity .4s ease, height .8s ease;
+}
+
+.triangle-text-show
+{
+	height: 100%;
+	opacity: 1;
+	transition: opacity .4s .4s ease, height .8s ease;
 }
 
 #exppro1
 {
+	// z-index: 4;
 }
 
 #exppro2
 {
+	// z-index: 3;
 	transition-duration: 1.5s;
-	transform: translate(0, -550px);
+	transform: translate(0, -50%);
 }
 
 #exppro3
 {
+	// z-index: 2;
 	transition-duration: 1.5s;
-	transform: translate(0, -1120px);
-}
+	transform: translate(0, -100%);
+} 
 
-#E-button1
+
+svg
 {
-	z-index: 4;
+	z-index: -1;
 }
 
-#E-button2
+
+.triangle
 {
-	z-index: 3;
+	position: relative;
+	z-index: -1;
+	width:100%;
+	// height:100%;
 }
 
-#E-button3
+.exppro-button
 {
-	z-index: 2;
+	position: absolute;
+	width: inherit;
+
+	.circle-base
+	{
+		position: absolute;
+		text-align: center;
+		top: 50%;
+	}
+
+	.triangle-title-left
+	{
+		left: 20%;
+		transform: translate3d(50%, 100%, 0);
+	}
+
+	.triangle-title-right
+	{
+		right: 20%;
+		transform: translate3d(-50%, 100%, 0);
+	}
 }
 
+//<polygon points="100 0, 0 50, 100 100"></polygon>
