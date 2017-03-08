@@ -496,32 +496,28 @@ EXPPRO.PHP
 	transition: opacity .4s ease, height .8s ease;
 }
 
-.triangle-text-show
+.triangle-text-show0
 {
 	height: 100%;
 	opacity: 1;
 	transition: opacity .4s .4s ease, height .8s ease;
 }
 
-#exppro1
+.triangle-text-show1
 {
-	// z-index: 4;
+	height: 100%;
+	opacity: 1;
+	transition: opacity .4s .4s ease, height .8s ease;
+	// transform: translate3d(0, -30%, 0);
 }
 
-#exppro2
+.triangle-text-show2
 {
-	// z-index: 3;
-	transition-duration: 1.5s;
-	transform: translate(0, -50%);
+	height: 100%;
+	opacity: 1;
+	transition: opacity .4s .4s ease, height .8s ease;
+	// transform: translate3d(0, -80%, 0);
 }
-
-#exppro3
-{
-	// z-index: 2;
-	transition-duration: 1.5s;
-	transform: translate(0, -100%);
-} 
-
 
 svg
 {
@@ -539,26 +535,68 @@ svg
 
 .exppro-button
 {
-	position: absolute;
 	width: inherit;
 
 	.circle-base
 	{
 		position: absolute;
 		text-align: center;
-		top: 50%;
 	}
+}
 
-	.triangle-title-left
+#E-button0
+{
+	left:60%;
+	transform: translate3d(0, 100%, 0);
+}
+
+#E-button1 {
+	left: 20%;
+	transform: translate3d(0, -50%, 0);
+}
+
+#E-button2 {
+	left: 60%;
+	transform: translate3d(0, -200%, 0);
+}
+
+
+
+@for $i from 1 through 1
+{
+	$translate : $i * 50%;
+
+	#exppro#{$i}
 	{
-		left: 20%;
-		transform: translate3d(50%, 100%, 0);
+		transition-duration: 1.5s;
+		transform: translate3d(0, -$translate, 0);
 	}
+}
 
-	.triangle-title-right
+#exppro2
+{
+	transition-duration: 1.5s;
+}
+
+.exppro-last
+{
+	transition-duration: 1.5s;
+	transform: translate3d(0, -200%, 0);
+}
+
+$colors: (
+  0  : $DARKER_GREY,
+  1  : $lIGHT_GREEN,
+  2  : $DARK_GREY
+);
+
+@each $name, $color in $colors
+{
+	#exppro#{$name}
 	{
-		right: 20%;
-		transform: translate3d(-50%, 100%, 0);
+		.triangle{
+			fill: $color;
+		}
 	}
 }
 

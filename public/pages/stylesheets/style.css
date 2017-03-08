@@ -452,54 +452,94 @@ EXPPRO.PHP
 }
 
 /* line 499, ../sass/style.scss */
-.triangle-text-show {
+.triangle-text-show0 {
   height: 100%;
   opacity: 1;
   transition: opacity .4s .4s ease, height .8s ease;
 }
 
-/* line 511, ../sass/style.scss */
-#exppro2 {
-  transition-duration: 1.5s;
-  transform: translate(0, -50%);
+/* line 506, ../sass/style.scss */
+.triangle-text-show1 {
+  height: 100%;
+  opacity: 1;
+  transition: opacity .4s .4s ease, height .8s ease;
 }
 
-/* line 518, ../sass/style.scss */
-#exppro3 {
-  transition-duration: 1.5s;
-  transform: translate(0, -100%);
+/* line 514, ../sass/style.scss */
+.triangle-text-show2 {
+  height: 100%;
+  opacity: 1;
+  transition: opacity .4s .4s ease, height .8s ease;
 }
 
-/* line 526, ../sass/style.scss */
+/* line 522, ../sass/style.scss */
 svg {
   z-index: -1;
 }
 
-/* line 532, ../sass/style.scss */
+/* line 528, ../sass/style.scss */
 .triangle {
   position: relative;
   z-index: -1;
   width: 100%;
 }
 
-/* line 540, ../sass/style.scss */
+/* line 536, ../sass/style.scss */
 .exppro-button {
-  position: absolute;
   width: inherit;
 }
-/* line 545, ../sass/style.scss */
+/* line 540, ../sass/style.scss */
 .exppro-button .circle-base {
   position: absolute;
   text-align: center;
-  top: 50%;
 }
-/* line 552, ../sass/style.scss */
-.exppro-button .triangle-title-left {
+
+/* line 547, ../sass/style.scss */
+#E-button0 {
+  left: 60%;
+  transform: translate3d(0, 100%, 0);
+}
+
+/* line 553, ../sass/style.scss */
+#E-button1 {
   left: 20%;
-  transform: translate3d(50%, 100%, 0);
+  transform: translate3d(0, -50%, 0);
 }
+
 /* line 558, ../sass/style.scss */
-.exppro-button .triangle-title-right {
-  right: 20%;
-  transform: translate3d(-50%, 100%, 0);
+#E-button2 {
+  left: 60%;
+  transform: translate3d(0, -200%, 0);
+}
+
+/* line 569, ../sass/style.scss */
+#exppro1 {
+  transition-duration: 1.5s;
+  transform: translate3d(0, -50%, 0);
+}
+
+/* line 576, ../sass/style.scss */
+#exppro2 {
+  transition-duration: 1.5s;
+}
+
+/* line 581, ../sass/style.scss */
+.exppro-last {
+  transition-duration: 1.5s;
+  transform: translate3d(0, -200%, 0);
+}
+
+/* line 597, ../sass/style.scss */
+#exppro0 .triangle {
+  fill: #6f6d6d;
+}
+
+/* line 597, ../sass/style.scss */
+#exppro1 .triangle {
+  fill: #83c9aa;
+}
+
+/* line 597, ../sass/style.scss */
+#exppro2 .triangle {
+  fill: #cccaca;
 }

@@ -21,15 +21,28 @@ function toggleFormation(id)
 //baisse la div exppro d'en dessous pour découvrir le text
 function toggleExppro(id)
 {
+	var noId = id.substr(-1, 1);
 	var $triangleText = $('[data-link="' + id + '"]');
 
-	if($triangleText.hasClass("triangle-text-show"))
+	if($triangleText.hasClass("triangle-text-show"+noId))
 	{
-		$triangleText.removeClass("triangle-text-show");
+		$triangleText.removeClass("triangle-text-show"+noId);
 	}
 	else
 	{
-		$triangleText.addClass("triangle-text-show");		
+		$triangleText.addClass("triangle-text-show"+noId);
+	}
+
+	nextId = parseInt(noId) + 1;
+	nextExppro = "#exppro"+nextId;
+	isLast = $(nextExppro).attr("data");
+	if(isLast == "last")
+	{
+		$(nextExppro).removeClass("exppro-last");
+	}
+	else
+	{
+		$(nextExppro).addClass("exppro-last");
 	}
 }
 
