@@ -23,6 +23,7 @@ function toggleExppro(id)
 {
 	var noId = id.substr(-1, 1);
 	var $triangleText = $('[data-link="' + id + '"]');
+<<<<<<< HEAD
 
 	if($triangleText.hasClass("triangle-text-show"+noId))
 	{
@@ -43,6 +44,16 @@ function toggleExppro(id)
 	else
 	{
 		$(nextExppro).addClass("exppro-last");
+=======
+
+	if($triangleText.hasClass("triangle-text-show"+noId))
+	{
+		$triangleText.removeClass("triangle-text-show"+noId);
+	}
+	else
+	{
+		$triangleText.addClass("triangle-text-show"+noId);
+>>>>>>> origin/master
 	}
 }
 

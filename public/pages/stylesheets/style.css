@@ -463,6 +463,10 @@ EXPPRO.PHP
   height: 100%;
   opacity: 1;
   transition: opacity .4s .4s ease, height .8s ease;
+<<<<<<< HEAD
+=======
+  transform: translate3d(0, -30%, 0);
+>>>>>>> origin/master
 }
 
 /* line 514, ../sass/style.scss */
@@ -470,11 +474,16 @@ EXPPRO.PHP
   height: 100%;
   opacity: 1;
   transition: opacity .4s .4s ease, height .8s ease;
+<<<<<<< HEAD
+=======
+  transform: translate3d(0, -80%, 0);
+>>>>>>> origin/master
 }
 
 /* line 522, ../sass/style.scss */
 svg {
   z-index: -1;
+<<<<<<< HEAD
 }
 
 /* line 528, ../sass/style.scss */
@@ -540,6 +549,68 @@ svg {
 }
 
 /* line 597, ../sass/style.scss */
+=======
+}
+
+/* line 528, ../sass/style.scss */
+.triangle {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+
+/* line 536, ../sass/style.scss */
+.exppro-button {
+  width: inherit;
+}
+/* line 540, ../sass/style.scss */
+.exppro-button .circle-base {
+  position: absolute;
+  text-align: center;
+}
+
+/* line 547, ../sass/style.scss */
+#E-button0 {
+  left: 60%;
+  transform: translate3d(0, 100%, 0);
+}
+
+/* line 553, ../sass/style.scss */
+#E-button1 {
+  left: 20%;
+  transform: translate3d(0, -50%, 0);
+}
+
+/* line 558, ../sass/style.scss */
+#E-button2 {
+  left: 60%;
+  transform: translate3d(0, -200%, 0);
+}
+
+/* line 569, ../sass/style.scss */
+#exppro1 {
+  transition-duration: 1.5s;
+  transform: translate3d(0, -50%, 0);
+}
+
+/* line 576, ../sass/style.scss */
+#exppro2 {
+  transition-duration: 1.5s;
+  transform: translate3d(0, -200%, 0);
+}
+
+/* line 592, ../sass/style.scss */
+#exppro0 .triangle {
+  fill: #6f6d6d;
+}
+
+/* line 592, ../sass/style.scss */
+#exppro1 .triangle {
+  fill: #83c9aa;
+}
+
+/* line 592, ../sass/style.scss */
+>>>>>>> origin/master
 #exppro2 .triangle {
   fill: #cccaca;
 }

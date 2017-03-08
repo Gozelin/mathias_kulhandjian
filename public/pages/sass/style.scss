@@ -508,7 +508,11 @@ EXPPRO.PHP
 	height: 100%;
 	opacity: 1;
 	transition: opacity .4s .4s ease, height .8s ease;
+<<<<<<< HEAD
 	// transform: translate3d(0, -30%, 0);
+=======
+	transform: translate3d(0, -30%, 0);
+>>>>>>> origin/master
 }
 
 .triangle-text-show2
@@ -516,12 +520,17 @@ EXPPRO.PHP
 	height: 100%;
 	opacity: 1;
 	transition: opacity .4s .4s ease, height .8s ease;
+<<<<<<< HEAD
 	// transform: translate3d(0, -80%, 0);
+=======
+	transform: translate3d(0, -80%, 0);
+>>>>>>> origin/master
 }
 
 svg
 {
 	z-index: -1;
+<<<<<<< HEAD
 }
 
 
@@ -579,6 +588,60 @@ svg
 }
 
 .exppro-last
+=======
+}
+
+
+.triangle
+{
+	position: relative;
+	z-index: -1;
+	width:100%;
+	// height:100%;
+}
+
+.exppro-button
+{
+	width: inherit;
+
+	.circle-base
+	{
+		position: absolute;
+		text-align: center;
+	}
+}
+
+#E-button0
+{
+	left:60%;
+	transform: translate3d(0, 100%, 0);
+}
+
+#E-button1 {
+	left: 20%;
+	transform: translate3d(0, -50%, 0);
+}
+
+#E-button2 {
+	left: 60%;
+	transform: translate3d(0, -200%, 0);
+}
+
+
+
+@for $i from 1 through 1
+{
+	$translate : $i * 50%;
+
+	#exppro#{$i}
+	{
+		transition-duration: 1.5s;
+		transform: translate3d(0, -$translate, 0);
+	}
+}
+
+#exppro2
+>>>>>>> origin/master
 {
 	transition-duration: 1.5s;
 	transform: translate3d(0, -200%, 0);
